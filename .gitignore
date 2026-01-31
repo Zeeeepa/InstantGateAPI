@@ -1,0 +1,52 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+instantgate
+
+# Build output
+/bin/
+/dist/
+
+# Test binary
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Dependency directories
+/vendor/
+
+# Go workspace file
+go.work
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Config files with secrets
+config/config.local.yaml
+config/secrets.yaml
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/

@@ -1,0 +1,48 @@
+# InstantGate API Configuration
+
+# Server configuration
+server:
+  port: 8080
+  read_timeout: 30s
+  write_timeout: 30s
+  idle_timeout: 60s
+
+# Database configuration
+database:
+  driver: mysql
+  host: localhost
+  port: 3306
+  name: hotel_project
+  user: root
+  password: ""
+  max_open_conns: 25
+  max_idle_conns: 5
+  conn_max_lifetime: 5m
+
+# JWT authentication configuration
+jwt:
+  secret: change-me-in-production
+  expiry: 24h
+  issuer: instantgate
+
+# Redis cache configuration (optional)
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  db: 0
+  cache_ttl: 5m
+
+# Security configuration
+security:
+  enabled: true
+  require_auth: false
+  # Whitelist: Only these tables will be accessible (empty = allow all)
+  whitelist: []
+  # Blacklist: These tables will never be accessible
+  blacklist: []
+
+# Logging configuration
+logging:
+  level: info
+  format: json
